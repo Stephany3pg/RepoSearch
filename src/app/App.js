@@ -1,12 +1,12 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
-import { Home } from '../components/home/Home';
+import Home from '../components/home/Home';
 
 const App = () => {
   return (
-    <ScrollView>
+    // <ScrollView>
       <Home></Home>
-    </ScrollView>
+    // </ScrollView>
   );
 }
 

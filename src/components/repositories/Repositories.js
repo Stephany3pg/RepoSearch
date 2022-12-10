@@ -1,5 +1,8 @@
 import React from 'react';
+import { SafeAreaView, FlatList, Text } from 'react-native';
+
 import Item from '../item/Item';
+import styled from 'styled-components';
 
 const Repositories = () => {
     const DATA = [
@@ -29,7 +32,7 @@ const Repositories = () => {
     );
 
     return (
-    <SafeAreaView style={styles.container}>
+    <SafeAreaView>
         <FlatList
             data={DATA}
             renderItem={renderItem}

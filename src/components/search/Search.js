@@ -1,8 +1,9 @@
 import React from 'react';
+import { View } from 'react-native';
 
 const Search = () => {
     //ListView
-  return;
+  return <View/>;
 }
 
 export default Search;

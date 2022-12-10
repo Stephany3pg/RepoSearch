@@ -1,13 +1,8 @@
 import React from 'react';
-import { ScrollView } from 'react-native';
-import { Home } from '../components/home/Home';
+import Repositories from '../repositories/Repositories';
 
-const App = () => {
-  return (
-    <ScrollView>
-      <Home></Home>
-    </ScrollView>
-  );
+const Home = () => {
+  return (<Repositories></Repositories>);
 }
 
-export default App;
+export default Home;

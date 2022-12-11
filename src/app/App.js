@@ -16,7 +16,7 @@ const App = () => {
             fontSize: 34,
           },
         }}/>
-        <Stack.Screen name="Repository" component={(props) => <RepositoryScreen {...props}/>} options={({ data }) => ({ headerTitle: data.repo })}/>
+        <Stack.Screen name="Repository" component={RepositoryScreen} options={({ route }) => ({ headerTitle: route.params.repo })}/>
       </Stack.Navigator>
     </NavigationContainer>    
   );

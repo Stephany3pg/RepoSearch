@@ -3,10 +3,10 @@ import { SafeAreaView } from 'react-native';
 
 import Repositories from '../repositories/Repositories';
 
-const Home = () => {
+const Home = ({ navigation }) => {
   return (        
     <SafeAreaView>
-        <Repositories/>
+        <Repositories navigation={navigation}/>
     </SafeAreaView>);
 }
 

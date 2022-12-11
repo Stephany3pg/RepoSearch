@@ -4,7 +4,7 @@ import { FlatList } from 'react-native';
 import Item from '../item/Item';
 import Search from '../search/Search';
 
-const Repositories = () => {
+const Repositories = ({ navigation }) => {
     const DATA = [
         {
           id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
@@ -28,7 +28,7 @@ const Repositories = () => {
       ];
 
     const renderItem = ({ item }) => (
-        <Item data={item} />
+        <Item data={item} navigation={navigation}/>
     );
 
     return (

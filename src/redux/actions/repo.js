@@ -1,13 +1,12 @@
 import axios from 'axios';
 
-import { BASE_URL } from '../../config';
 import { GET_REPOSITORIES } from '../../constants';
 
 
-export const getRepositories = () => {
+export const getRepositories = (page) => {
     try {
       return async dispatch => {
-        const response = await axios.get(`https://api.github.com/search/repositories?q=TERMO_DA_BUSCA&per_page=20`);
+        const response = await axios.get(`https://api.github.com/search/repositories?q=TERMO_DA_BUSCA&sort=stars&per_page=20`);
         if (response.data) {
           dispatch({
             type: GET_REPOSITORIES,
@@ -26,7 +25,7 @@ export const getRepositories = () => {
 export const searchRepositories = term => {
   try {
     return async dispatch => {
-      const response = await axios.get(`https://api.github.com/search/repositories?q=${term}&per_page=20`);
+      const response = await axios.get(`https://api.github.com/search/repositories?q=${term}&sort=stars&per_page=20`);
       if (response.data) {
         dispatch({
           type: GET_REPOSITORIES,

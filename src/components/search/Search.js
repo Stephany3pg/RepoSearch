@@ -17,7 +17,7 @@ const Search = () => {
         placeholder="Busca por repositórios"
         onChangeText={searchFilterFunction}
         autoCorrect={false}
-        onKeyboardHide={fetchRepositories}
+        onPressOut={fetchRepositories}
         onSubmitEditing={fetchRepositories}
         value={search}
         lightTheme

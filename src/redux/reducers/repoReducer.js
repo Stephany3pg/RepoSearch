@@ -9,7 +9,7 @@ const repoReducer = (state = initialState, action) => {
         case GET_REPOSITORIES:
             return {
                 ...state,
-                repositories:action.payload
+                repositories: action.payload
             };
         default:
             return state;

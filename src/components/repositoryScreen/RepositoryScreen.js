@@ -1,9 +1,15 @@
 import React from 'react';
-import { View } from 'react-native';
+import { WebView } from 'react-native-webview';
 
 
-const RepositoryScreen = () => {
-  return (<View></View>);
+const RepositoryScreen = ({ html_url }) => {
+  return (      
+  <WebView
+    source={{
+      uri: html_url
+    }}
+    style={{ marginTop: 20 }}
+  />);
 }
 
-export default RepositoryScreen;
+export default RepositoryScreen;pod 

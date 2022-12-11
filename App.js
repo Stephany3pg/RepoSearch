@@ -22,7 +22,7 @@ const App = () => {
         <Stack.Screen
           name="Repository"
           component={RepositoryScreen} 
-          options={({ route }) => ({ headerTitle: route.params.repo })}/>
+          options={({ route }) => ({ headerTitle: route.params.name })}/>
       </Stack.Navigator>
     </NavigationContainer>    
   );

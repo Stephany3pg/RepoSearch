@@ -2,7 +2,6 @@ import React from 'react';
 import { SafeAreaView, FlatList, Text } from 'react-native';
 
 import Item from '../item/Item';
-import styled from 'styled-components';
 import Search from '../search/Search';
 
 const Repositories = () => {

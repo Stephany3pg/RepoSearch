@@ -9,11 +9,15 @@ const Search = () => {
 
     return (
     <SearchBar
-        placeholder="Type Here..."
+        placeholder="Busca por repositórios"
         onChangeText={searchFilterFunction}
         autoCorrect={false}
         value={search}
-        inputStyle={{fontFamily: 'arial'}}
+        lightTheme
+        round
+        containerStyle={{backgroundColor: 'white'}}
+        inputContainerStyle={{backgroundColor: 'rgba(118, 118, 128, 0.12)'}}
+
     />);
 }
 

@@ -10,7 +10,7 @@ const Repositories = () => {
           id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
           repo: 'First Item',
           user: 'user 1',
-          starts: 3,
+          stars: 3,
         },
         {
           id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
@@ -32,13 +32,13 @@ const Repositories = () => {
     );
 
     return (
-    <SafeAreaView>
-        <FlatList
-            data={DATA}
-            renderItem={renderItem}
-            keyExtractor={item => item.id}
-        />
-    </SafeAreaView>);
+        <SafeAreaView>
+            <FlatList
+                data={DATA}
+                renderItem={renderItem}
+                keyExtractor={item => item.id}
+            />
+        </SafeAreaView>);
 }
 
 export default Repositories;

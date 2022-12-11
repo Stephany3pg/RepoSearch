@@ -3,6 +3,7 @@ import { SafeAreaView, FlatList, Text } from 'react-native';
 
 import Item from '../item/Item';
 import styled from 'styled-components';
+import Search from '../search/Search';
 
 const Repositories = () => {
     const DATA = [
@@ -37,6 +38,7 @@ const Repositories = () => {
                 data={DATA}
                 renderItem={renderItem}
                 keyExtractor={item => item.id}
+                ListHeaderComponent={<Search/>}
             />
         </SafeAreaView>);
 }

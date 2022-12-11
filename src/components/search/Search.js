@@ -15,9 +15,14 @@ const Search = () => {
         value={search}
         lightTheme
         round
-        containerStyle={{backgroundColor: 'white'}}
+        containerStyle={{
+            backgroundColor: 'white',                 
+            borderWidth: 0,
+            shadowColor: 'white',
+            borderBottomColor: 'transparent',
+            borderTopColor: 'transparent',
+        }}
         inputContainerStyle={{backgroundColor: 'rgba(118, 118, 128, 0.12)'}}
-
     />);
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SafeAreaView, FlatList, Text } from 'react-native';
+import { FlatList } from 'react-native';
 
 import Item from '../item/Item';
 import Search from '../search/Search';
@@ -32,14 +32,14 @@ const Repositories = () => {
     );
 
     return (
-        <SafeAreaView>
-            <FlatList
-                data={DATA}
-                renderItem={renderItem}
-                keyExtractor={item => item.id}
-                ListHeaderComponent={<Search/>}
-            />
-        </SafeAreaView>);
+        <FlatList
+            data={DATA}
+            renderItem={renderItem}
+            keyExtractor={item => item.id}
+            ListHeaderComponent={<Search/>}
+        />
+    );
+
 }
 
 export default Repositories;

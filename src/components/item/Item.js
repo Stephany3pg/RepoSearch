@@ -2,7 +2,7 @@ import React from 'react';
 import { ListItem, Avatar } from 'react-native-elements';
 import { Subtitles, Title, Row } from './style';
 
-const Item = ({ data }) => {
+const Item = ({ navigation, data }) => {
 
   const stars = data.stars > 1 ? 'stars' : 'star';
   return (

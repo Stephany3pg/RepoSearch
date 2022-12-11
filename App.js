@@ -10,13 +10,19 @@ const App = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={Home} options={{ 
-          headerTitle: 'Repositórios',
-          headerTitleStyle: {
+        <Stack.Screen 
+          name="Home"
+          component={Home}
+          options={{ 
+            headerTitle: 'Repositórios',
+            headerTitleStyle: {
             fontSize: 34,
           },
         }}/>
-        <Stack.Screen name="Repository" component={RepositoryScreen} options={({ route }) => ({ headerTitle: route.params.repo })}/>
+        <Stack.Screen
+          name="Repository"
+          component={RepositoryScreen} 
+          options={({ route }) => ({ headerTitle: route.params.repo })}/>
       </Stack.Navigator>
     </NavigationContainer>    
   );
